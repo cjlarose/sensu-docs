@@ -55,9 +55,7 @@ Configure RabbitMQ to use these SSL certs
 
 {% highlight bash %}
 mkdir /etc/rabbitmq/ssl
-cp server_key.pem /etc/rabbitmq/ssl/
-cp server_cert.pem /etc/rabbitmq/ssl/
-cp testca/cacert.pem /etc/rabbitmq/ssl/
+cp server_key.pem server_cert.pem testca/cacert.pem /etc/rabbitmq/ssl
 {% endhighlight %}
     
 Create `/etc/rabbitmq/rabbitmq.config`:
